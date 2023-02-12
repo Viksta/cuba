@@ -92,6 +92,12 @@ h1 {
 
 .grounding-item {
     padding-top: 65px;
+    transition: transform .2s;
+}
+
+.grounding-item:hover {
+    transform: scale(1.3);
+    /* примерно. а почему, кстати, если выставить в процентах, то он уменьшает, а не увеличивает? */
 }
 
 .grounding-item h2 {
