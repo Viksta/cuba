@@ -28,7 +28,7 @@ body {
     border-bottom: 4px solid rgba(236, 184, 76, 1);
 }
 
-.title .flexbox {
+.grounding .flexbox {
     max-width: 1600px;
 }
 
@@ -37,7 +37,7 @@ h1 {
     margin: 0;   
 }
 
-.title h1 {
+.title {
     /* width: 535px; */
     height: 38px;
     
@@ -58,7 +58,7 @@ h1 {
 /* почему, если ставишь .title .flexbox h1 или даже без h1, то ничего не происходит? флекс если и работает, то align-items точно нет. если убрать .flexbox , то все работает */
 /* не могу сбросить базовую жирность  h1 */
 
-.grounding p {
+.content {
     font-family: 'Helvetica';
     font-size: 16px;
     line-height: 28px;
@@ -118,4 +118,11 @@ h1 {
     font-size: 14px;
     line-height: 16px;
     color: rgba(144, 144, 144, 1);
+}
+
+.cadillacs img {
+    width: 1170px;
+    height: 329.27px;
+
+    box-shadow: 50px 50px 50px 15px #212020;
 }
