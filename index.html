@@ -14,20 +14,20 @@
       <img src="pics/top-photo.png" alt="View of Cuba" />
 
       <nav class="main-navigation flexbox">
-        <a href="#">Summary</a>
-        <a href="#">General</a>
-        <a href="#">Sights</a>
-        <a href="#">Weather</a>
-        <a href="#">What to Do</a>
-        <a href="#">Residential Guide</a>
-        <a href="#">Photos</a>
+        <a class="smaller-font" href="#">Summary</a>
+        <a class="smaller-font" href="#">General</a>
+        <a class="smaller-font" href="#">Sights</a>
+        <a class="smaller-font" href="#">Weather</a>
+        <a class="smaller-font" href="#">What to Do</a>
+        <a class="smaller-font" href="#">Residential Guide</a>
+        <a class="smaller-font" href="#">Photos</a>
       </nav>
     </header>
 
     <!-- grounding -->
-    <section class="grounding flexbox">
-        <div class="grounding">    
-          <h1 class="title">Why you’ll love vacation in Cuba</h1>
+    <section class="grounding">
+        <div class="container">    
+          <h2 class="title">Why you’ll love vacation in Cuba</h2>
       
           <p class="content">It always had the allure a forbidden fruit. I love it for its uniqueness, creativity and survivalist spirit. I love it because, despite 60 years of setbacks, it remains an upbeat and open place. Walk down the street with a Cuban friend and, within one block, you’ll have received five handshakes, four kisses, three greetings of ‘dime hermano!’ and at least two invites into someone’s house. <a href="#">Read More ››</a></p>
 
@@ -35,29 +35,31 @@
               <!-- item -->
               <div class="grounding-item">
                 <img src="pics/route.png" alt="">
-                <h2>1,920</h2>
-                <p>Trips</p>
+                <p class="big-numbers">1,920</p>
+                <p class="smaller-font">Trips</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
                 <img src="pics/restaurant.png" alt="">
-                <h2>271</h2>
-                <p>Venues</p>
+                <p class="big-numbers">271</p>
+                <p class="smaller-font">Venues</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
                 <img src="pics/transport.png" alt="">
-                <h2>3,321</h2>
-                <p>Tickets Sold</p>
+                <p class="big-numbers">3,321</p>
+                <p class="smaller-font">Tickets Sold</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
                 <img src="pics/interface.png" alt="">
-                <h2>2,912</h2>
-                <p>Reviews</p>
+                <p class="big-numbers">2,912</p>
+                <p class="smaller-font">Reviews</p>
+
+                <!-- а можно же убрать классы у всех дивов и в цсс написать просто .item-block div ? -->
             </div>
           </div>
         </div>
@@ -66,26 +68,27 @@
 
       <!-- about -->
       <section class="about">
-        <h2 class="title">What Cuba is about</h2>
-        <p class="content">Cuba is like a prince in a poor man’s coat; behind the sometimes shabby facades, gold dust lingers. It’s these rich dichotomies that make travel here the exciting. Trapped in a time warp and reeling from an economic embargo that has grated for more than half a century, this is a country where you can wave goodbye to everyday assumptions and expect the unexpected.</p>
-        <img src="pics/Varadero-Beach-Cuba.png" alt="Varadero Beach">
+        <div class="container">
+          <h2 class="title">What Cuba is about</h2>
+          <p class="content">Cuba is like a prince in a poor man’s coat; behind the sometimes shabby facades, gold dust lingers. It’s these rich dichotomies that make travel here the exciting. Trapped in a time warp and reeling from an economic embargo that has grated for more than half a century, this is a country where you can wave goodbye to everyday assumptions and expect the unexpected.</p>
+          <div class="beaches flexbox">
+          <img src="pics/Varadero-Beach-Cuba.png" alt="Varadero Beach">
 
-        <div class="box flexbox">
-        <h2>Astonishing Beaches</h2>
-        <p>Whether you’re staying in a luxury hotel in Havana or exploring the rural charms of Vinales, in some ways it’s all the real Cuba. Some travellers might opt to miss the beach resort town of Varadero, but this energetic beachside paradise should still  be an option to consider as part of your Cuban travel plans.</p>
+            <div class="card">
+            <h3>Astonishing Beaches</h3>
+            <p>Whether you’re staying in a luxury hotel in Havana or exploring the rural charms of Vinales, in some ways it’s all the real Cuba. Some travellers might opt to miss the beach resort town of Varadero, but this energetic beachside paradise should still  be an option to consider as part of your Cuban travel plans.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Cadillacs -->
       <section class="cadillacs">
-        <h3 class="title">The Cadillacs of Cuba</h3>
+        <h2 class="title">The Cadillacs of Cuba</h2>
         <img src="pics/Cadillac.png" alt="Light blue Cadillacs">
         <p class="content">The American trade embargo with Cuba in 1960 had the effect of instantly separating thousands of 1940s and 1950s Detroit-built cars from their spare parts supply. Convertibles were always popular, thanks to year-round tropical weather. The place for posing with your ride is hard to miss in Havana. The squares around Capitolio, a flattering copy of Washington’s Capitol building, are lined with 50-year-old American cars during daylight hours.</p>
 
 
       </section>
-
-
-
-
   </body>
+</html>
