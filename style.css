@@ -207,6 +207,7 @@ body {
     box-shadow: 0px 45px 38px -64px #212020
 
     margin: auto;
+    /* почему тут ошибку показывает?  */
 }
 
 .cadillacs .title {
@@ -227,4 +228,33 @@ body {
     max-width: 970px;
     margin: auto;
     margin-bottom: 50px;
+}
+
+.swiper { 
+    max-width: 1440px;
+    height: 100%;
+    }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+swiper-slide img {
+    width: 58%;
+    object-fit: cover;
+    }
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 140px !important;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 140px !important;
+    right: auto;
 }
