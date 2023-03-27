@@ -29,7 +29,7 @@
 
     <!-- grounding -->
     <section class="grounding">
-        <div class="container">    
+      <div class="container">    
           <h2 class="title">Why you’ll love vacation in Cuba</h2>
       
           <p class="content">It always had the allure a forbidden fruit. I love it for its uniqueness, creativity and survivalist spirit. I love it because, despite 60 years of setbacks, it remains an upbeat and open place. Walk down the street with a Cuban friend and, within one block, you’ll have received five handshakes, four kisses, three greetings of ‘dime hermano!’ and at least two invites into someone’s house. <a href="#">Read More ››</a></p>
@@ -37,35 +37,36 @@
             <div class="item-block flexbox">
               <!-- item -->
               <div class="grounding-item">
-                <img src="pics/route.png" alt="">
+                <img src="pics/grounding/route.png" alt="">
                 <p class="big-numbers">1,920</p>
                 <p class="smaller-font">Trips</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
-                <img src="pics/restaurant.png" alt="">
+                <img src="pics/grounding/restaurant.png" alt="">
                 <p class="big-numbers">271</p>
                 <p class="smaller-font">Venues</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
-                <img src="pics/transport.png" alt="">
+                <img src="pics/grounding/transport.png" alt="">
                 <p class="big-numbers">3,321</p>
                 <p class="smaller-font">Tickets Sold</p>
               </div>
 
               <!-- item -->
               <div class="grounding-item">
-                <img src="pics/interface.png" alt="">
+                <img src="pics/grounding/interface.png" alt="">
                 <p class="big-numbers">2,912</p>
                 <p class="smaller-font">Reviews</p>
 
-                <!-- а можно же убрать классы у всех дивов и в цсс написать просто .item-block div ? -->
+                <!-- можно здесь убрать классы у всех дивов и в цсс написать .item-block > div -->
+              </div>
             </div>
+              <div class="line longer"></div>
           </div>
-        </div>
       </section>
 
 
@@ -89,15 +90,17 @@
 
       <!-- Cadillacs -->
       <section class="cadillacs">
+        <div class="container">
         <h2 class="title">The Cadillacs of Cuba</h2>
-        <img src="pics/Cadillac.png" alt="Light blue Cadillacs">
+        <img src="pics/Cadillac.png" alt="Light blue Cadillac">
         <p class="content">The American trade embargo with Cuba in 1960 had the effect of instantly separating thousands of 1940s and 1950s Detroit-built cars from their spare parts supply. Convertibles were always popular, thanks to year-round tropical weather. The place for posing with your ride is hard to miss in Havana. The squares around Capitolio, a flattering copy of Washington’s Capitol building, are lined with 50-year-old American cars during daylight hours.</p>
+        <div class="line longer"></div>
       </section>
 
       <section class="photos">
       <h2 class="title">Cuba in Photos</h2>
       <p>When you think of Carribean, you’re probably not thinking of Cuba. It’s the lone acacia silhouetted against a horizon stretching into eternity. It’s the snow-capped mountain almost on the equator and within sight of harsh deserts. It’s the lush, palm-fringed coastline of the Indian Ocean, it’s the Great Rift Valley that once threatened to tear the continent asunder, and it’s the dense forests reminiscent of the continent’s heart. In short, Kenya is a country of epic landforms that stir our deepest longings for this very special continent.</p>
-      
+      <div class="line shorter"></div>
 
       <!-- photo gallery -->
       <div class="swiper mySwiper">
@@ -109,9 +112,9 @@
           <div class="swiper-slide"><img src="pics/photo (3).png"></div>
         </div>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-buttom-prev"></div>
 
       <script>
         var swiper = new Swiper(".mySwiper", {
@@ -120,55 +123,47 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        pagination {
+        pagination: {
           el: ".swiper-pagination",
         },
         mousewhell: true,
         keyboard: true,
       });
-
-        
-
-
       </script>
       </section>
 
       <!-- footer  -->
       <footer class="main-footer">
-        <div class="lists flexbox">
-          <img src="pics/T-Agency.png" alt="logo">
-          <ul>
-              <li class="list-headline">COMPANY</li>
-              <li class="list-item">About TripOp</li>
-              <li class="list-item">Work with Us</li>
-          </ul>
-
+        <div class="container">
+          <div class="lists flexbox">
+            <img src="pics/footer/T-Agency.png" class="logo" alt="logo">
             <ul>
-              <li class="list-headline">DISCOVER</li>
-              <li class="list-item">How to Book?</li>
-              <li class="list-item">Methods of Payment</li>
-              <li class="list-item">General Conditions</li>
+                <li class="list-headline">COMPANY</li>
+                <li class="list-item">About TripOp</li>
+                <li class="list-item">Work with Us</li>
             </ul>
 
-            <ul>
-              <li class="list-headline">CONNECT WITH US</li>
-              <li class="list-item contact">Contact Us</li>
-              <li class="list-item fb">Facebook</li>
-              <li class="list-item inst">Instagram</li>
-            </ul>
+              <ul>
+                <li class="list-headline">DISCOVER</li>
+                <li class="list-item">How to Book?</li>
+                <li class="list-item">Methods of Payment</li>
+                <li class="list-item">General Conditions</li>
+              </ul>
 
-            <ul>
-              <li class="list-headline">BLOG</li>
-              <li class="list-item">Choosing A Static Caravan</li>
-              <li class="list-item jumping-hover">Cost Cutting Ideas For Your Wedding</li>
-            </ul>
+              <ul>
+                <li class="list-headline">CONNECT WITH US</li>
+                <li class="list-item contact"><img src="./pics/footer/contactus.svg" alt="contact icon"/>  Contact Us</li>
+                <li class="list-item fb"><img src="pics/footer/facebook.svg" alt="fb icon"/> Facebook</li>
+                <li class="list-item inst"><img src="pics/footer/insta.svg" alt="inst icon"/> Instagram</li>
+              </ul>
+
+              <ul>
+                <li class="list-headline">BLOG</li>
+                <li class="list-item">Choosing A Static Caravan</li>
+                <li class="list-item jumping-hover">Cost Cutting Ideas For Your Wedding</li>
+              </ul>
+            </div>
         </div>
-
-            <!-- <div class="column-one"><span>COMPANY</span><br>About TripOp<br>Work with Us</div>
-            <div class="column-one"><span>DISCOVER</span><br>How to Book?<br>Methods of Payment<br>General Conditions</div>
-            <div class="column-one"><span>CONNECT WITH US</span><br>Contact Us<br>Facebook<br>Instagram</div>
-            <div class="column-one"><span>BLOG</span><br>Choosing A Static Caravan<br>Cost Cutting Ideas For Your Wedding</div> -->
-
         <div class="rights">© 2016 All rights reserved.</div>
       </footer>
   </body>

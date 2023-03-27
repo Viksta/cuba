@@ -20,11 +20,20 @@ body {
     display: flex;
 }
 
-.main-navigation {
-    justify-content: space-evenly;
-
+header {
     border-bottom: solid 1px rgba(208, 212, 216, 1);
 }
+
+header img {
+    width: 100%;
+}
+
+.main-navigation {
+    margin: auto;
+    max-width: 650px;
+    justify-content: space-evenly;
+}
+
 
 .main-navigation a {
     font-size: 14px;
@@ -59,15 +68,12 @@ body {
     font-weight: normal;
     
     text-align: center;
-    /* text-align: center;  НЕ РАБОТАЕТ. ПОЧЕМУ? я хз, но теперь работает*/
     margin: 0;
     margin-bottom: 40px;
     padding-top: 80px;
 
     color: #4E5665;
 }
-
-/* почему, если ставишь .title .flexbox h1 или даже без h1, то ничего не происходит? флекс если и работает, то align-items точно нет. если убрать .flexbox , то все работает */
 
 .content {
     font-size: 16px;
@@ -98,8 +104,9 @@ body {
     align-items: center;
 
     padding-bottom: 80px;
-    border-bottom: solid 1px rgba(208, 212, 216, 1);
+    /* border-bottom: solid 1px rgba(208, 212, 216, 1); */
 }
+
 /* как регулировать длину бордер боттом? */
 
 /* .grounding .item-block:after {
@@ -211,17 +218,11 @@ body {
 }
 
 .cadillacs img {
+    width: 100%;
     max-width: 1170px;
     max-height: 329.27px;
 
-    /* картинка стоит слишком влево. максы не дают уменьшение картинки при уменьшении экрана. почему? */
-
     box-shadow: 0px 45px 38px -64px #212020;
-
-    margin: auto;
-    /* никак. почему? он же по идее должен переписывать*/
-
-    margin-left: 180px;
 }
 
 .cadillacs .title {
@@ -235,8 +236,15 @@ body {
     margin: auto;
 
     padding-bottom: 80px;
-    border-bottom: solid 1px rgba(208, 212, 216, 1);
 }
+
+.cadillacs::after {
+    display: block;
+    content: "";
+    width: 200px;
+    height: 1px;
+}
+
 
 .photos p {
     max-width: 970px;
@@ -258,11 +266,6 @@ body {
     align-items: baseline;
 }
 
-swiper-slide img {
-    width: 58%;
-    object-fit: cover;
-    }
-
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: 140px !important;
     left: auto;
@@ -275,7 +278,6 @@ swiper-slide img {
 
 .main-footer {
     height: 313px;
-    width: 1440px;
     padding-top: 53px;
 
     background-color: #F2F2F2;
@@ -287,23 +289,21 @@ footer img {
 }
 
 .lists {
-justify-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.logo {
+    padding-right: 50px;
 }
 
 footer ul {
     list-style-type: none; 
-
 }
-
-/* ul .contact {
-    list-style-image: url("/pics/contactus.svg");
-} */
 
 li {
     font-size: 15px;
-    /* как сделать так, что бы ховер был на все, кроме заголовков, если они все li? я дала им всем классы, а есть другие варианты?*/
-    /* box-sizing: border-box;
-    width: 110%; */
+    box-sizing: border-box;
+    width: 200px;
 }
 
 .jumping-hover {
@@ -314,8 +314,26 @@ li {
     margin-bottom: 20px;
 }
 
-
 .rights {
-/* margin: auto; */
 margin-top: 95px;
+
+text-align: center;
+}
+
+.line {
+    border-bottom: solid 1px rgba(208, 212, 216, 1);
+}
+
+.longer {
+    width: 1170px;
+    margin-left: -100px;
+}
+
+.shorter {
+    width: 270px;
+    margin: auto;
+}
+
+.swiper {
+    margin-top: 55px;
 }
